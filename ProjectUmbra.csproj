@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <BaseOutputPath>E:\Steam\steamapps\workshop\content\1102190\ProjectUmbra\plugins</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutDir>E:\Steam\steamapps\workshop\content\1102190\ProjectUmbra\plugins\</OutDir>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>E:\Steam\steamapps\workshop\content\1102190\2187468759\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\Steam\steamapps\common\Monster Train\MonsterTrain_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>E:\Steam\steamapps\workshop\content\1102190\2187468759\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>E:\Steam\steamapps\workshop\content\1102190\2187468759\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TrainworksModdingTools">
+      <HintPath>E:\Steam\steamapps\workshop\content\1102190\2205086946\plugins\TrainworksModdingTools.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>E:\Steam\steamapps\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Steam\steamapps\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TextMeshPro">
+      <HintPath>E:\Steam\steamapps\common\Monster Train\MonsterTrain_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>E:\Steam\steamapps\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>E:\Steam\steamapps\common\Monster Train\MonsterTrain_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
